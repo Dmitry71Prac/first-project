@@ -1,0 +1,478 @@
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  background-color: #f2f2f2;
+  padding-left: 64px;
+  position: relative;
+  overflow: hidden;
+  /* выше установили ограничения для секции */
+}
+
+.header_logo {
+  margin-top: 30px;
+}
+.header_title {
+  line-height: 96px;
+  font-size: 102px;
+  font-style: bold;
+  width: 730px;
+}
+
+.header_subtitle {
+  line-height: 25px;
+  font-size: 18px;
+  width: 388px;
+  margin-bottom: 30px;
+  position: absolute;
+  bottom: 0;
+}
+
+.header_link {
+  color: #2f80ed;
+}
+
+.header_main-illustraion {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header_square-pic {
+  animation: rotation linear 20s infinite;
+  background-color: #2f80ed;
+  width: 568px;
+  height: 568px;
+  position: absolute;
+  top: 64px;
+  right: 0px;
+  z-index: 0;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.description {
+  padding-top: 100px;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.brief {
+  width: 175px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.main-text {
+  width: 80%;
+  min-width: 784px;
+  line-height: 34px;
+  font-size: 24px;
+  font-style: normal;
+}
+.paragraph {
+  margin-bottom: 30px;
+}
+
+.digits {
+  padding: 100px 0 100px 0;
+}
+
+.techniques {
+  padding-top: 100px;
+}
+
+.oakley {
+  background-color: #f2f2f2;
+  padding-top: 160px;
+}
+
+.section {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-title {
+  width: 60%;
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-subtitle {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.cards {
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.cards-item {
+  margin-left: 100px;
+  width: 240px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.cards-item:first-child {
+  margin-left: 0;
+}
+.cards-item:nth-child(4) {
+  margin-left: 0;
+}
+
+.cards-title {
+  margin-top: 43px;
+  margin-bottom: 16px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.cards-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 100px;
+}
+
+.cards-desctiption {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.table {
+  width: 1100px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table__bottom {
+  margin-bottom: 0;
+}
+
+.kaufman {
+  background-color: #1f1f1f;
+  color: #f2f2f2;
+  padding: 90px 0 90px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.kaufman_triangle {
+  position: absolute;
+  right: -210px;
+  top: 0;
+}
+
+.table-cell {
+  z-index: 1;
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table-cell__width {
+  width: 200px;
+  margin-top: 80px;
+}
+
+.table-heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.table-text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.resources-logo-zone {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  width: 1100px;
+}
+
+.resources-logo {
+  width: 270px;
+  height: 38px;
+}
+
+.resources {
+  padding: 100px 0 217px 0;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  color: #f2f2f2;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  min-height: 350px;
+}
+
+.footer-columns {
+  padding-left: auto;
+  padding-right: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-column {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-copyright {
+  display: flex;
+  flex-basis: 711px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.place-footer {
+  margin-top: 0;
+  height: 35px;
+}
+.footer-author {
+  margin: 18px 0 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer-column-heading {
+  margin-bottom: 20px;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-column-links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-column-link {
+  color: #f2f2f2;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.footer-column-link img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+a {
+  opacity: 1;
+  transition: opacity;
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.video {
+  padding-top: 100px;
+  margin-bottom: -40px;
+}
+.video-iframe {
+  display: flex;
+  justify-content: center;
+  padding-left: auto;
+  padding-right: auto;
+  margin-top: 50px;
+}
+
+.video-iframe iframe:first-child {
+  margin-right: 20px;
+}
+
+.feynman {
+  background-color: #f2f2f2;
+  position: relative;
+  padding-top: 100px;
+  box-sizing: content-box;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 890px;
+}
+
+.img_feynman {
+  position: absolute;
+  z-index: 0;
+  min-width: 867px;
+  height: 637px;
+  left: 0;
+  bottom: 0;
+}
+
+.feynman_title {
+  width: 648px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 70px;
+}
+
+.feynman_subtitle {
+  position: relative;
+  z-index: 1;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman_link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: bold;
+  position: absolute;
+  top: 45%;
+  right: 40px;
+  cursor: pointer;
+  z-index: 99;
+  /* фикс данной ошибки https://stackoverflow.com/questions/21733391/css-hover-will-not-work-on-position-absolute */
+}
+
+.khan {
+  padding-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.khan-contanier {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.khan-author {
+  line-height: 42px;
+  font-size: 30px;
+}
+
+.khan-title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.khan-quote {
+  line-height: 34px;
+  font-size: 24px;
+  width: 790px;
+  margin-bottom: 36px;
+}
+
+.khan-quote-author {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.khan-quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  margin-bottom: 68px;
+}
+
+.buy-link {
+  line-height: 42px;
+  font-size: 30px;
+}
+
+.book-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.khan-book-pic {
+  width: 620px;
+  height: 608px;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.buy-link {
+  margin-left: 48px;
+}
